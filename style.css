@@ -214,6 +214,79 @@ body {
 
 @media (width < 800px) {
     #phone-info {
+        display: none;
+    }
+
+    #exercise-question {
+        font-size: 1rem;
+        top: -10%;
+    }
+
+    #constants {
+        width: 95%;
+        left: 50%;
+        translate: -50%;
+        flex-direction: row;
+        justify-content: center;
+        top: 15%;
+        height: 2%;
+    }
+
+    #constants > div {
+        font-size: 0.5rem;
+        height: 100%;
+    }
+
+    #exercise-canvas {
+        width: 95%;
+    }
+
+    .canvas-controls {
+        width: 95%;
+    }
+
+    #exercise-answer-label {
+        left: 2.5%;
+        font-size: 0.75rem;
+        font-weight: bold;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 1%;
+    }
+
+    #exercise-answer {
+        font-size: 1rem;
+        right: 2.5%;
+        width: 40%;
+    }
+
+    #answer-tutorial {
+        font-size: 0.75rem;
+        left: 0;
+        translate: 0 0;
+        bottom: -6%;
+        text-align: left;
+        margin-left: 3.5%;
+    }
+
+    #hint-button {
+        translate: -145%;
+        right: 3.5%;
+        bottom: -7.5%;
+    }
+
+    #submit-button {
+        translate: 0;
+        right: 3.5%;
+        bottom: -7.5%;
+    }
+
+    #vzorecky-close {
+        bottom: 5%;
+    }
+
+    #vzorecky > img {
+        width: 100%;
     }
 }

@@ -504,6 +504,24 @@ function vzoreckyState() {
     }
 }
 
+function canvasTouchStart(e) {
+    e.stopPropagation()
+    e.preventDefault()
+
+    const touch = e.touches[0]
+
+    canvasMouseDown(touch)
+}
+
+function canvasTouchMove(e) {
+    e.stopPropagation()
+    e.preventDefault()
+
+    const touch = e.touches[0]
+
+    canvasMouseMove(touch)
+}
+
 function main() {
     setupData()
     loadBrush()    
@@ -513,6 +531,11 @@ function main() {
     exerciseCanvas.addEventListener("mousemove", canvasMouseMove)    
     exerciseCanvas.addEventListener("mouseup", canvasMouseUp)
     exerciseCanvas.addEventListener("mouseout", canvasMouseOut)
+
+    exerciseCanvas.addEventListener("touchstart", canvasTouchStart)
+    exerciseCanvas.addEventListener("touchmove", canvasTouchMove)
+    exerciseCanvas.addEventListener("touchend", canvasMouseUp)
+    exerciseCanvas.addEventListener("touchcancel", canvasMouseOut)
     
     submitButton.addEventListener("click", submit)
 
