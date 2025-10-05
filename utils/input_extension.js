@@ -7,7 +7,7 @@
 export function assignInput(htmlElement, enterAction) {
     function onInput(e) {
         const key = e.key
-        
+
         if (key === "_") {
             e.preventDefault()
             

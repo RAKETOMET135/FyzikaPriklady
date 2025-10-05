@@ -409,6 +409,9 @@ function next() {
 
 function keyDown(e) {
     if (e.key === "z" && e.ctrlKey) {
+        e.preventDefault()
+        e.stopPropagation()
+
         loadLastCanvasState()
     }
     else if (e.key === "Enter") {
