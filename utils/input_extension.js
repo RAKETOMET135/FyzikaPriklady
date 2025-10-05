@@ -29,13 +29,15 @@ export function assignInput(htmlElement, enterAction) {
     htmlElement.addEventListener("keydown", onInput)
 
     function isMobile() {
-        return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent)
+        return window.innerWidth <= 800
     }
 
-    if (isMobile) {
+    if (isMobile()) {
         htmlElement.addEventListener("copy", () => {
             wrapSelection("sup")
         })
+
+        document.querySelector("#answer-tutorial").innerText = "Zkopírujte část textu, aby byl mocnina"
     }
 }
 

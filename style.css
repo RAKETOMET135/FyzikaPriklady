@@ -212,6 +212,10 @@ body {
     display: none;
 }
 
+#erase-canvas {
+    display: none;
+}
+
 @media (width < 800px) {
     #phone-info {
         display: none;
@@ -288,5 +292,15 @@ body {
 
     #vzorecky > img {
         width: 100%;
+    }
+
+    #erase-canvas {
+        position: absolute;
+        display: block;
+        bottom: 15%;
+        right: 2.5%;
+        background-color: red;
+        border: none;
+        color: white;
     }
 }

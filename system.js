@@ -10,6 +10,8 @@ const exerciseAnswerLabel = document.querySelector("#exercise-answer-label")
 const exerciseAnswer = document.querySelector("#exercise-answer")
 const submitButton = document.querySelector("#submit-button")
 
+const mobileEraseCanvas = document.querySelector("#erase-canvas")
+
 const brushColorInput = document.querySelector("#brush-color")
 const brushWidthInput = document.querySelector("#brush-width")
 
@@ -550,22 +552,9 @@ function main() {
 
     const iid = setInterval(() => { waitForDataLoad(iid) }, 100)
 
-    let startTime = 0
-
-    exerciseCanvas.addEventListener("touchstart", (e) => {
-        if (e.touches.length >= 2) {
-            startTime = new Date().getTime()
-        }
-    })
-
-    exerciseCanvas.addEventListener("touchend", (e) => {
-        const endTime = new Date().getTime()
-        const tapDuration = endTime - startTime
-
-        if (tapDuration > 100 && e.changedTouches.length >= 2) {
-            canvasContext.clearRect(0, 0, exerciseCanvas.width, exerciseCanvas.height)
-            undoStack.content = []
-        }
+    mobileEraseCanvas.addEventListener("click", () => {
+        canvasContext.clearRect(0, 0, exerciseCanvas.width, exerciseCanvas.height)
+        undoStack.content = []
     })
 }
 
