@@ -27,6 +27,16 @@ export function assignInput(htmlElement, enterAction) {
     }
 
     htmlElement.addEventListener("keydown", onInput)
+
+    function isMobile() {
+        return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent)
+    }
+
+    if (isMobile) {
+        htmlElement.addEventListener("copy", () => {
+            wrapSelection("sup")
+        })
+    }
 }
 
 function wrapSelection(tag) {
