@@ -1,0 +1,106 @@
+{
+    "exercises": [
+        {
+            "question": "Určete vlnovou délku záření, jehož foton má stejnou energii, jakou získá elektron při průchodu dvěma body elektrického pole, v nichž je rozdíl potenciálů 4,1V.",
+            "answer": 302.8,
+            "answer_units": "nm",
+            "answer_text": "Vlnová délka záření:",
+            "main_unit": "m"
+        },
+        {
+            "question": "Určete vlnovou délku fotonu, jehož hmotnost je rovna klidové hmotnosti elektronu.",
+            "answer": 2.4285,
+            "answer_units": "pm",
+            "answer_text": "Vlnová délka fotonu:",
+            "main_unit": "m"
+        },
+        {
+            "question": "Cviřené oko nacházející se delší dobu ve tmě může zachytit světelný podnět ze zdroje světla při nejmenším vyzářeném výkonu 2,1 * 10<sup>-17</sup>W. Určete, kolik fotonů světla o vlnové délce 500 nm dopadá každou sekundu na sítnici oka.",
+            "answer": 52.8,
+            "answer_units": "",
+            "answer_text": "Počet fotonů:",
+            "main_unit": ""
+        },
+        {
+            "question": "Nastane vnější fotoelektrický jev, jestliže měděnou elektrodu osvětlíme světlem o vlnové délce 400 nm? Výstupní práce mědi je 4,47 eV.",
+            "answer": "ne",
+            "answer_units": "",
+            "answer_text": "Nastane jev? ('ano'/'ne')",
+            "main_unit": ""
+        },
+        {
+            "question": "Vnější fotoelektrický jev nastane u stříbrné elektrody při nejdelší vlnové délce světla 260 nm. Určete výstupní práci stříbra.",
+            "answer": 0.765,
+            "answer_units": "aJ",
+            "answer_text": "Výstupní práce stříbra:",
+            "main_unit": "J"
+        },
+        {
+            "question": "Zinková elektroda je ozářena ultrafialovým zářením o vlnové délce 320 nm. Jakou největší rychlost mají elektrony uvolněné ze zinku při vnějším fotoelektrickém jevu? Výstupní práce zinku je 3,74 eV.",
+            "answer": 222000,
+            "answer_units": "m/s",
+            "answer_text": "Největší rychlost uvolněných elektronů:",
+            "main_unit": "m/s"
+        },
+        {
+            "question": "Výstupní práce sodíku je 2,28 eV. Lze vyvolat vnější fotoelektrický jev zářením o vlnové délce 500 nm?",
+            "answer": "ano",
+            "answer_units": "",
+            "answer_text": "Lze jev vyvolat ('ano'/'ne')",
+            "main_unit": ""
+        },
+        {
+            "question": "Při osvětlení fotonky jí prochází proud elektronů emitovaných z fotokatody pokryté cesiem. Tento proud byl potlačen vytvořením rozdílu potenciálů 1,2 V mezi elektrodami. Určete vlnovou délku světla, kterým byla fotonka osvětlena. Výstupní práce cesia je 1,93 eV",
+            "answer": 396.62,
+            "answer_units": "nm",
+            "answer_text": "Vlnová délka světla:",
+            "main_unit": "m"
+        },
+        {
+            "question": "* Určete hybnost γ záření o vlnové délce 1 pm.",
+            "answer": 6.63,
+            "answer_power": -22,
+            "answer_units": "kg*m/s",
+            "answer_text": "Hybnost γ záření:",
+            "main_unit": "kg*m/s"
+        },
+        {
+            "question": "* Určete vlnovou délku λ<sub>0</sub> při výstupní práci 1,93 eV.",
+            "answer": 641.6,
+            "answer_units": "nm",
+            "answer_text": "Vlnová délka:",
+            "main_unit": "m"
+        },
+        {
+            "question": "* Určete rychlost elektronu u Lithia při vlnové délce 2 * 10<sup>-6</sup> cm a výstupní práci 2,4 eV.",
+            "answer": 4.58,
+            "answer_power": 6,
+            "answer_units": "m/s",
+            "answer_text": "Rychlost elektronu:",
+            "main_unit": "m/s"
+        },
+        {
+            "question": "* Určete rychlost elektronu s vlnovou délkou 200 nm a výstupní prací 5 eV.",
+            "answer": 0.654,
+            "answer_power": 6,
+            "answer_units": "m/s",
+            "answer_text": "Rychlost elektronu:",
+            "main_unit": "m/s"
+        },
+        {
+            "question": "* Určete kinetickou energii elektronů při kmitočtu 1,1 * 10<sup>15</sup> Hz a vlnovou délkou 200 nm. Výsledek zapište v eV.",
+            "answer": 1.6575,
+            "answer_units": "eV",
+            "answer_text": "Kinetická energie elektronů v eV:",
+            "main_unit": "eV"
+        },
+        {
+            "question": "* Určete energii v eV při vlnové délce 100 m.",
+            "answer": 12.43,
+            "answer_power": -9,
+            "answer_units": "eV",
+            "answer_text": "Energie v eV:",
+            "main_unit": "eV"
+        }
+    ]
+}

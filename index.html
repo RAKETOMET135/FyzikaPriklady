@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main-section">
+        <p id="exercise-question">Placeholder exercise question</p>
+        <canvas id="exercise-canvas"></canvas>
+        <p id="exercise-answer-label">Enter answer:</p>
+        <div contenteditable="true" id="exercise-answer" autocapitalize="false" autocorrect="off" spellcheck="false" aria-multiline="false"></div>
+        <button id="submit-button">✓</button>
+        <button id="hint-button">?</button>
+        <p id="answer-tutorial">Press '^' to make selected text upper index</p>
+        <div class="canvas-controls">
+            <div>
+                <p>Brush width:</p>
+                <input id="brush-width" type="text" spellcheck="false" placeholder="5">
+            </div>
+            <div>
+                <p>Brush color:</p>
+                <input id="brush-color" type="text" spellcheck="false" placeholder="white">
+            </div>
+        </div>
+        <div id="constants">
+            <div>
+                m<sub>e</sub> = 9,1 * 10<sup>-31</sup> kg
+            </div>
+            <div>
+                c = 3 * 10<sup>8</sup> m * s<sup>-1</sup>
+            </div>
+            <div>
+                h = 6,63 * 10<sup>-34</sup> J * s
+            </div>
+            <div>
+                e = 1,6 * 10<sup>-19</sup> C
+            </div>
+            <div>
+                1 eV = 1,6 * 10<sup>-19</sup> J
+            </div>
+        </div>
+    </section>
+
+    <div id="vzorecky">
+        <img src="images/vzorecky1.png" alt="">
+        <img src="images/vzorecky2.png" alt="">
+
+        <button id="vzorecky-close">Close</button>
+    </div>
+
+    <p id="phone-info">Tato webová stránka není přizpůsobená na mobilní zařízení</p>
+    
+    <script src="system.js" type="module"></script>
+</body>
+</html>

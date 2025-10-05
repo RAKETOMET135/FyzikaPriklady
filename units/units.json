@@ -1,0 +1,116 @@
+{
+    "unit_set": [
+        {
+            "main_unit": "kg",
+            "units": [
+                {
+                    "unit": "g",
+                    "conversion": "*1000"
+                },
+                {
+                    "unit": "t",
+                    "conversion": "/1000"
+                },
+                {
+                    "unit": "mg",
+                    "conversion": "*1000000"
+                }
+            ]
+        },
+        {
+            "main_unit": "m",
+            "units": [
+                {
+                    "unit": "km",
+                    "conversion": "/1000"
+                },
+                {
+                    "unit": "dm",
+                    "conversion": "*10"
+                },
+                {
+                    "unit": "cm",
+                    "conversion": "*100"
+                },
+                {
+                    "unit": "mm",
+                    "conversion": "*1000"
+                },
+                {
+                    "unit": "µm",
+                    "conversion": "*1000000"
+                },
+                {
+                    "unit": "nm",
+                    "conversion": "*1000000000"
+                },
+                {
+                    "unit": "pm",
+                    "conversion": "*1000000000000"
+                },
+                {
+                    "unit": "fm",
+                    "conversion": "*1000000000000000"
+                }
+            ]
+        },
+        {
+            "main_unit": "J",
+            "units": [
+                {
+                    "unit": "kJ",
+                    "conversion": "/1000"
+                },
+                {
+                    "unit": "MJ",
+                    "conversion": "/1000000"
+                },
+                {
+                    "unit": "mJ",
+                    "conversion": "*1000"
+                },
+                {
+                    "unit": "µJ",
+                    "conversion": "*1000000"
+                },
+                {
+                    "unit": "nJ",
+                    "conversion": "*1000000000"
+                },
+                {
+                    "unit": "pJ",
+                    "conversion": "*1000000000000"
+                },
+                {
+                    "unit": "fJ",
+                    "conversion": "*1000000000000000"
+                },
+                {
+                    "unit": "aJ",
+                    "conversion": "*1000000000000000000"
+                }
+            ]
+        },
+        {
+            "main_unit": "m/s",
+            "units": [
+                {
+                    "unit": "km/s",
+                    "conversion": "/1000"
+                },
+                {
+                    "unit": "km/h",
+                    "conversion": "*3.6"
+                }
+            ]
+        },
+        {
+            "main_unit": "kg*m/s",
+            "units": []
+        },
+        {
+            "main_unit": "eV",
+            "units": []
+        }
+    ]
+}

@@ -1,0 +1,219 @@
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+.main-section {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    translate: 0 -50%;
+    width: 100%;
+    height: 80%;
+}
+
+#exercise-question {
+    color: white;
+    font-size: 2rem;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    text-align: justify;
+    margin: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+#exercise-canvas {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: black;
+    translate: -50% -50%;
+    left: 50%;
+    top: 50%;
+}
+
+#exercise-answer-label {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+#exercise-answer {
+    outline: none;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    font-size: 2rem;    
+    border: none;
+    width: 15%;
+    background-color: black;
+    height: 5%;
+    white-space: pre;
+    color: white;
+    text-align: center;
+}
+
+#answer-tutorial {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    margin: 0;
+    translate: 0 115%;
+    user-select: none;
+    pointer-events: none;
+}
+
+#submit-button, #hint-button {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    right: 30%;
+    translate: -50%;
+    margin: 0;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: limegreen;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.15s;
+}
+#submit-button:hover, #hint-button:hover {
+    scale: 1.05;
+}
+#submit-button:active, #hint-button:active {
+    scale: 0.95;
+}
+
+#hint-button {
+    translate: -200%;
+    background-color: blue;
+}
+
+.canvas-controls {
+    width: 70%;
+    height: 5%;
+    left: 50%;
+    translate: -50%;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.canvas-controls > div {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.canvas-controls > div > p {
+    display: inline;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    pointer-events: none;
+}
+.canvas-controls > div > input {
+    width: 50px;
+    margin-left: 10px;
+    outline: none;
+    text-align: center;
+    display: inline;
+}
+
+#brush-color {
+    width: 150px;
+}
+
+#constants {
+    position: absolute;
+    height: 70%;
+    width: 12.5%;
+    top: 50%;
+    right: 15%;
+    translate: 102% -50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    user-select: none;
+    pointer-events: none;
+}
+#constants > div {
+    color: white;
+}
+
+#vzorecky {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 5;
+    display: none;
+}
+#vzorecky > img {
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+#vzorecky-close {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    translate: -50%;
+    font-size: 2rem;
+    border: none;
+    background-color: red;
+    color: white;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+#vzorecky-close:hover {
+    scale: 1.05;
+}
+#vzorecky-close:active {
+    scale: 0.95;
+}
+
+#phone-info {
+    color: white;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index: 63413;
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    display: none;
+}
+
+@media (width < 800px) {
+    #phone-info {
+        display: flex;
+    }
+}
