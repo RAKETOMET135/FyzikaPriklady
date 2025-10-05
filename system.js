@@ -550,10 +550,10 @@ function main() {
 
     const iid = setInterval(() => { waitForDataLoad(iid) }, 100)
 
-    let startTime = 0;
+    let startTime = 0
 
     exerciseCanvas.addEventListener("touchstart", (e) => {
-        if (e.touches.length === 2) {
+        if (e.touches.length >= 2) {
             startTime = new Date().getTime()
         }
     })
@@ -562,7 +562,7 @@ function main() {
         const endTime = new Date().getTime()
         const tapDuration = endTime - startTime
 
-        if (tapDuration < 300 && e.changedTouches.length === 2) {
+        if (tapDuration > 100 && e.changedTouches.length >= 2) {
             canvasContext.clearRect(0, 0, exerciseCanvas.width, exerciseCanvas.height)
             undoStack.content = []
         }
