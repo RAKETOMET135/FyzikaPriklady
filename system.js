@@ -552,18 +552,19 @@ function main() {
 
     let startTime = 0;
 
-    exerciseCanvas.addEventListener('touchstart', (e) => {
+    exerciseCanvas.addEventListener("touchstart", (e) => {
         if (e.touches.length === 2) {
             startTime = new Date().getTime()
         }
     })
 
-    exerciseCanvas.addEventListener('touchend', (e) => {
+    exerciseCanvas.addEventListener("touchend", (e) => {
         const endTime = new Date().getTime()
         const tapDuration = endTime - startTime
 
         if (tapDuration < 300 && e.changedTouches.length === 2) {
-            console.log('Two-finger tap detected!')
+            canvasContext.clearRect(0, 0, exerciseCanvas.width, exerciseCanvas.height)
+            undoStack.content = []
         }
     })
 }
