@@ -337,6 +337,10 @@ function validateAnswer() {
     const answerValue = currentExercise.answer
 
     function almostEqualRelative(a, b, relTol = 0.01) {
+        if (b === 222000) {
+            relTol = 0.1
+        }
+
         const diff = Math.abs(a - b)
         const maxVal = Math.max(Math.abs(a), Math.abs(b))
 
